@@ -1,0 +1,27 @@
+<!-- report.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Interface</title>
+</head>
+<body>
+    <h2>Select Report Variables</h2>
+    <form action="/generateReport" method="post">
+        <h3>Select Variables to Include:</h3>
+        <label for="user_id">User ID</label>
+        <input type="checkbox" id="user_id" name="variables" value="user_id">
+
+        <label for="username">Username</label>
+        <input type="checkbox" id="username" name="variables" value="username">
+
+        <label for="bio">Bio</label>
+        <input type="checkbox" id="bio" name="variables" value="bio">
+
+        <!-- Add more variables as needed -->
+
+        <button type="submit">Generate Report</button>
+    </form>
+</body>
+</html>
